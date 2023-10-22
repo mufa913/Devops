@@ -25,7 +25,7 @@ def check_password_strength(password):
         return False
     return True
 
-password=input("enter the password:")
+password=input("Enter the password:")
 
 #Password stregnth check function called
 Is_strong=check_password_strength(password)
