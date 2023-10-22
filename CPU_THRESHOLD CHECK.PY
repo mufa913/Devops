@@ -13,7 +13,7 @@ try:
 
         # checking the usage using psutil library and cpu_percent function and comparing with the threshold
         if psutil.cpu_percent(1)>predefined_threshold:
-            print("Alert! CPU usage exceeds threshold:"+str(predefined_threshold))
+            print("Alert! CPU usage exceeds threshold:"+ str(psutil.cpu_percent(1)))
 
 #using the keyboard interrupt(ctrl+c) to exit the loop            
 except KeyboardInterrupt:
